@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <link rel="stylesheet" href="css/home.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+</head>
+<body>
+<!--<a class="btn btn-danger navbar-btn" href="./login.html" onclick="handleLogout()">Logout</a>-->
+
+<div class="demo-wrap">
+
+    <label class="logoutLblPos">
+        <input onclick="logout()" name="submit2" type="submit" id="submit2" value="Log out">
+    </label>
+
+    <img
+            class="demo-bg"
+            src="https://images.rawpixel.com/image_800/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvam9iNjg0LTE1NC14LmpwZw.jpg?s=cXcBMtpAOTuzL8jbWQUlvkrcEuPVqEWZWRVy9QISSZE"
+            alt=""
+    >
+    <div class="demo-content">
+
+<div class="container" id="home-container">
+    <div id="music-form-container">
+        <form id="music-form">
+            <h3>Music Review App</h3>
+            <div>
+                <input  id="title-input" placeholder="Title"></input>
+                <input  id="artist-input" placeholder="Artist"></input>
+                <input  id="genre-input" placeholder="Genre"></input>
+                <input  id="year-input" placeholder="Year"></input>
+
+            </div>
+            <button id="submit-button" type="submit" class="btn btn-primary mt-1">Add</button>
+        </form>
+
+        <br>
+
+        <table class = "table table-bordered" style="width:900px">
+            <thead class = "table-dark">
+            <tr>
+            <th scope="col">Title</th>
+                <th scope="col">Artist</th>
+                <th scope="col">Genre</th>
+                <th scope="col">Year</th>
+            </tr>
+            </thead>
+            <tbody id="table_body">
+
+            </tbody>
+
+
+        </table>
+<!--        <table class="table" id="table">-->
+<!--            <thead class="thead-dark">-->
+<!--            <tr>-->
+<!--                <th scope="col">Title</th>-->
+<!--                <th scope="col">Artist</th>-->
+<!--                <th scope="col">Genre</th>-->
+<!--                <th scope="col">Year</th>-->
+<!--            </tr>-->
+<!--            </thead>-->
+<!--            <tbody id="tbody">-->
+
+<!--            </tbody>-->
+
+<!--        </table>-->
+
+        <div id="music-container" class="container-fluid">
+
+            <!-- Update Button -->
+            <div class="editTable" id="editTable">
+                <div class="left">Title: </div><div class="right"><input type="text" name="Title" id="updateTitle"></div>
+                <div class="left">Artist: </div><div class="right"><input type="text" name="Artist" id="updateArtist"></div>
+                <div class="left">Genre: </div><div class="right"><input type="text" name="Genre" id="updateGenre"></div>
+                <div class="left">Year: </div><div class="right"><input type="number" name="Year" id="updateYear"></div>
+
+            </div>
+            <div class="editTableSubmit" id="editTableSubmit">
+
+            </div>
+        </div>
+</div>
+    </div>
+    </div>
+</div>
+<script src="./javascript/home.js" type="application/javascript">
+
+</script>
+</body>
+</html>
